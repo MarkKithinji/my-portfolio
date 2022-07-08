@@ -1,14 +1,59 @@
 body{
-    background-color: azure;
+    background-color: rgba(6, 8, 8, 0.836);
     margin:0;
 }
 section{
-    background-color: rgb(172, 200, 211);
+    background-color: rgb(4, 5, 5);
 }
 .hero{
-    background-color: gold;
+    background-color: rgb(12, 12, 14);
+    outline: 4px #808080;
+    box-shadow: 1px 10px 8px #070404b7;
+    color: rgb(152, 159, 168);
+    display: grid;
+    height: 450px;
+    
+    
 }
- 
+
+@media all and (max-width: 300px){
+    .lose{position: absolute;
+            right: 10px;
+            top: 150px; 
+            }
+}
+    
+
+    .img_me{
+        transition: 0.4s;
+        position:absolute;
+        right: 45%;
+        top: 27px;
+        border-radius: 9px;
+        box-shadow: 9px 6px 8px ;
+        
+    }
+
+
+#logo{
+    
+    height: 300px;
+    width: auto;
+    position: absolute;
+    left:25px;
+    top: 9px;
+    
+}
+#logotext{
+    position: absolute;
+    left: 87px;
+    top: 250px;
+    font-family: algerian;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(41, 41, 65, 0.856);
+
+}
 nav{
     justify-content: space-between;
     display: flex;
@@ -23,6 +68,7 @@ ul{
 
 li, a{
     text-decoration: none;
+    text-decoration-color: none;
 
 }
 
@@ -39,14 +85,99 @@ li, a{
 }
 
 .button{
+    transition: duration 0.5s; 
     width: 200px;
-    height: 55px;
-    border-radius: 30px;
-    background-color: rgb(139, 173, 44);
-    text-align: center;
+    height: 30px;
+    border-radius: 11px;
     font-size: 30px;
     font-weight: 300;
     padding-top: 7px;
     margin-top: 20px;
+    outline: solid 2px rgba(197, 191, 191, 0.589);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    
+}
 
+.button:hover{
+    background-color: aliceblue;
+    box-shadow: 9px 9px 6px #808080;
+}
+.button2{
+    transition: duration 0.5s; 
+    width: 200px;
+    height: 30px;
+    border-radius: 11px;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 7px;
+    margin-top: 20px;
+    outline: solid 2px rgba(197, 191, 191, 0.589);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    right: 5%;
+    top: 80px;
+    
+}
+.button2:hover{
+    background-color: aliceblue;
+    box-shadow: 9px 9px 6px #808080;
+}
+
+.button3{
+    transition: duration 0.5s; 
+    width: 200px;
+    height: 30px;
+    border-radius: 11px;
+    font-size: 130%;
+    font-weight: 300;
+    padding-top: 7px;
+    margin-top: 20px;
+    outline: solid 2px rgba(197, 191, 191, 0.589);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    right: 5%;
+    top: 160px;
+}
+
+.button3:hover{
+    background-color: aliceblue;
+    box-shadow: 9px 9px 6px #808080;
+}
+
+
+
+    
+    
+    
+   
+
+#bible{
+    border-radius: 30px;
+    position: absolute;
+    right: 290px;
+    top: 35px;
+}
+#email{
+    border-radius: 40px;
+    position: absolute;
+    right: 290px;
+    top: 115px;
+}
+
+#git{
+    border-radius: 40px;
+    position: absolute;
+    right: 290px;
+    top: 190px;
+}
+
+#nav_list{
+    background-color: aliceblue;
+    width: 100%;
 }
