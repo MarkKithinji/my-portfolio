@@ -27,10 +27,11 @@ section{
     .img_me{
         transition: 0.4s;
         position:absolute;
-        right: 45%;
+        right: 25%;
         top: 27px;
         border-radius: 9px;
-        box-shadow: 9px 6px 8px ;
+        outline: solid black 4px;
+        
         
     }
 
@@ -151,33 +152,357 @@ li, a{
 }
 
 
+.imageCorausel{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+
+#imagelinks{
+       
+    
+    transition: 0.5ms;    
+    background-color: #ffffff41;
+    width: 100%;
+    height: 1500px;
+    
 
     
     
+}
+
+#imagelinks:hover{
+    box-shadow: 4, 9, 5 #808080;
     
+}
+.imagebuttons{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+     
+
+}
+
+#raspberry{
+    position: absolute;
+    left: 50%;
+    top: 78.3%;    
+    width: 40%;
+    height: 80%;
+    
+}
+#raspberry-underlay{
+    position: absolute;
+    left: 0%;
+    top: 11.45%;    
+    width: 100%;
+    height: 100%;
+}
+.raspberry-overlay{
+    position: absolute;
+    top: 11.45%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    opacity: 0;
+    transition: 60ms;
+}
+.raspberry-overlay:hover{
+    opacity: 1;
+}
+#myProjects{
+    background-color: aliceblue;
+    border-radius: 9px;
+    width: 100%;
+    height: 1000px;
+    display: none;
+}
    
+
+
+
+#discussion{
+    position: relative;
+    left: 7%;
+    width: 30%;
+    height: 40%;
+    
+}
+.discussion-overlay{
+    position:absolute;
+    top: 7%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.555);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;  
+    border-radius: 9px;  
+    opacity: 0;
+    transition:80ms;
+}
+
+#discussion-underlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.discussion-overlay:hover{
+    opacity: 1;
+    box-shadow: 10px 10px 9px #02020288;
+}
+#aboutMeText{
+    background-color: rgba(240, 248, 255, 0.336);
+    border-radius: 9px;
+    width: 100%;
+    
+    height: 1500px;
+    display: none;
+    color-scheme: #454649;
+}
+/*----------------------------------*/
+/*describing the about me section*/
+
+.h1Headings{
+    font-family: elephant;
+    color:rgba(8, 8, 8, 0.692);
+    position: relative;
+    padding-top: 7%;
+    
+}
+.paragraphs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+.detailbox{
+    position: relative;
+    top: 30px;
+    background-color: rgba(8, 8, 8, 0.692);
+    outline: auto;
+    color: #6a6b6d;
+    transition: 1s;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.detailbox:hover{
+    box-shadow: 10px 10px 9px #020202;
+}
+.briefDetails{
+
+    color: #4a4c50;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.briefDetails2{
+    position: relative;
+    left: 50%;
+    color: #4a4c50;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.detailSpans{
+    color: #fcfcfcf8;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.servicesBox{
+    display: flex;
+    height: 1500px;
+    position: relative;
+    width: 100%;
+    top: 40px;
+    height: 1600px;
+    background-color: #131212c9;
+}
+.servicesSideA{
+    position: absolute;
+    top: 20px;
+    left:10px;
+    height: 700px;
+    
+}
+.servicesSideB{
+    position: absolute;
+    top: 20px;
+    left:50%;
+    width: 50%;
+    height: 700px;
+    
+    margin: 0 auto;
+    
+}
+.service{
+    background-color: #02020270;
+    width: 80%;
+    border-radius: 9px;
+    outline: auto;
+    height: 25%;
+    transition:90ms;
+
+}
+.service:hover{
+    transform: scale(1.02);
+    box-shadow: 8px 8px 8px 8px #020202;
+    color: #808080;
+    background-color: #0202029c;
+    
+}
+/*working on the right side*/
+#webdesign{
+    position: relative;
+    top: 20px;
+    left: 30px;
+    
+}
+#graphicdesign{
+    position: relative;
+    top: 30%;
+    left: 30px;
+    
+}
+#lightingTech{
+    position: relative;
+    top: 60%;
+    left: 30px;
+    
+}
+
+/*working on the left side*/
+
+#lightingTech{
+    position: relative;
+    top: 60%;
+    left: 30px;
+    
+}
+
+#SEOmarketing{
+    position: relative;
+    top: 20px;
+    left: 30px;   
+    
+}
+#digitalMarketing{
+    position: relative;
+    top: 30%;
+    left: 30px;   
+    
+}
+#emailmarketing{
+    position: relative;
+    top: 60%;
+    left: 15%;   
+    
+}
+
+
+
+#contacts{
+    position: relative;
+    left: 7%;
+    top:40px;
+    bottom: 40px;
+    width: 87%;
+    height: 30%;
+       
+    
+}
+#contacts-underlay{
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.contacts-overlay{
+    position:absolute;
+    top:40px;
+    
+    left:0px;
+    background: rgba(0, 0, 0, 0.589);
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+    opacity: 0;
+    transition: 50ms;
+
+}
+.contacts-overlay:hover{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+#contactsText{
+    background-color: aliceblue;
+    border-radius: 9px;
+    width: 100%;
+    height: 1000px;
+    display: none;
+}
+
+
+
 
 #bible{
     border-radius: 30px;
     position: absolute;
-    right: 290px;
+    right: 10px;
     top: 35px;
 }
 #email{
     border-radius: 40px;
     position: absolute;
-    right: 290px;
+    right: 10px;
     top: 115px;
 }
 
 #git{
     border-radius: 40px;
     position: absolute;
-    right: 290px;
+    right: 10px;
     top: 190px;
 }
 
 #nav_list{
     background-color: aliceblue;
     width: 100%;
+}
+
+#about_me{
+    opacity: 70;
+    border-radius: 10px;
+}
+
+.contact-me{
+    height: 600px;
+    outline: solid 2px #050404;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: aliceblue;
+    position: relative;
+    top: 15rem;
+    height: 40%;
+    width: 100%;
+
 }

@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    
     <link rel="stylesheet" href="./public/style.css">
     <link rel="icon" href="./public/images/techicon.png">
+</head>
+    
 
     <title>
-            this is me`
+            MarkKithinji portfolio
     </title>
     <body>
         
@@ -14,19 +27,19 @@
             <div class="hero_area">
                 <div class="hero_text">
                     <div class="lose">
-                        <img  src="./public/images/markID.jpg" align="middle" width="150px" height="auto" class="img_me" usemap="#clickmark"></center>
+                        <img  src="./public/images/markID2.jpg" align="middle" height="420px" width="auto" class="img_me" usemap="#clickmark"></center>
                     </div>
                     <map name="clickmark">
-                        <area shape="rect" coords="1, 1, 300, 300" alt="the image of Mark Victor" href="https://twitter.com/home">
+                        <area shape="rect" coords="1, 1, 600, 600" alt="the image of Mark Victor" href="https://twitter.com/home">
                     </map>
                         
-                        <img src="./public/images/techicon.png" id="logo">
+                        
 
                         <h5 id="logotext">TECHBLOG.ORG</h5>
                         
-                    <h1 style="font-family:elephant; position:absolute; right: 37%; top:305px;"><center>MarkKithinji,s portfolio</center></h1>
-                    <h3 style="font-family:'Times New Roman', Times, serif; position:absolute; right: 37%; top:340px;">STEM programm LEAD STUDENT</h3>
-                    <h3 style="font-family: 'Times'; position:absolute; right: 41.5%; top:365px;">for GOD, by GOD, with GOD</h3>
+                    <h1 style="font-family:elephant; float:left;">MarkKithinji,s portfolio</h1><br/>
+                    <h3 style="font-family:'Times New Roman', Times, serif; float: left;">STEM programm LEAD STUDENT</h3><br/>
+                    <h3 style="font-family: 'Times'; float: left;">for GOD, by GOD, with GOD</h3>
                     
                     <div class="button" style="font-family:'times' ; font: size 30px;"><a href="https://www.kingjamesbibleonline.org/">The Bible</a>
                     </div>
@@ -43,18 +56,174 @@
         <div class="button_icons">
             <img src="./public/images/bible.png" height="30px" width="auto" id="bible">
             <img src="./public/images/email.jpg" height="30px" width="auto" id="email">
-            <img src="./public/images/github.jpg" height="30px" width="auto" id="git"
+            <img src="./public/images/github.jpg" height="30px" width="auto" id="git">
         </div>
 
         <nav>
             <ul id="nav_list">
                 
-                <li style="font-family:'Times New Roman', Times, serif"><a href="#">About Me</a></li>
-                <li style="font-family: Times;"><a href="#">projects</a></li>
-                <li style="font-family:'Times New Roman', Times, serif;"><a href="#">contacts</a></li>
-
+                <li style="font-family:'Times New Roman', Times, serif">learn more about Mark Victor</li>
+                
             </ul>
         </nav>
+        
+        
+        
+        <div class="imageCorausel">
+            
+
+                    <!---creating corausel division 1--->
+                    <div id="imagelinks">
+                    
+                            <div id="discussion" class="corausel__button">
+                                
+                                    <h4>About Mark</h4>
+
+                                    <a href="#" target="_self"><img  src="./public/images/markdiscussing.jpg" alt="mark in discussion" class="imagebuttons" id="discussion-underlay"></a>
+                                    
+                                    <button class="discussion-overlay" id="discussionButton" onclick= aboutMeAppear(); selfDissapear();"><p> Learn About Mark</p></button>
+                                
+                            </div>
+                
+                        
+                        
+
+                            <div id="raspberry" class="corausel__button">
+                                <h4>projects</h4>
+                                <img  src="./public/images/arduinoproject.jpg" class="imagebuttons" id="raspberry-underlay">
+
+                                <a href="#" target="_self"><div class="raspberry-overlay"><p>view my projects</p></div></a>
+                            </div>
+                        
+                            <div id="contacts" class="corausel__button">
+                                <h4>contacts</h4>
+                                <a href="#" target="_self"><img src="./public/images/contact-us.jpg" class="imagebuttons" id="contacts-underlay" "></a>
+                                <a href="#" target="_self"><button class="contacts-overlay" onclick="showcontacts()"> Contact Me </button></a>
+                            </div> 
+                    </div>
+                    
+
+                    <!---creating corausel division 2--->
+                    
+                    <div id="contactsText" class="corausel">
+                        <p>this is where my contacts should go</p>
+                    </div>
+                    
+                    
+                    
+                    <div id="aboutMeText" class="corausel">
+                        <button onclick="operateCorausel(); aboutMeDissappear();"> go back (under maintenance :( sorry)) </button>
+                        <center><h1 class="h1Headings">ABOUT MARK KITHINJI</h1></center>
+                            <p class="paragraphs">
+                                I am a developer currently specialized to web development and windows apps
+                                development. I currently major in the languages CSS, HTML and Javascript for web development and python 
+                                for windows applications development. i, being an artist too, believe that programming ought to be a work of 
+                                art, to say the least. By those standards I score pretty highly. <br/>
+                                My major goal is to make websites as attractive and user friendly as they can possibly be.
+                            </p>
+
+
+                            <div class="detailbox">
+                                <p class="briefDetails" style="float: right;">
+                                    Age: <span class="detailSpans">18 (as 0f 2022)</span><br/>
+                                    Gender: <span class="detailSpans">male</span><br/>
+                                    Languages: <span class="detailSpans">English, Kiswahili, French</span><br/>
+                                    Work: <span class="detailSpans">front-end developer</span><br/>                                
+                                </p>
+                                <p class="briefDetails2" >
+                                    FreeLance: <span class="detailSpans">Available</span><br/>
+                                    Speciality: <span class="detailSpans">Web-developer, app developer</span><br/>
+                                    Languages: <span class="detailSpans">Python, CSS, HTML, Javascript</span><br/>
+                                    height: <span class="detailSpans">5'9</span><br/>
+                                </p>
+                            </div>
+                        
+                        <center><h1 class="h1Headings">MY SERVICES</h1></center>
+
+                            <div class="servicesBox">
+                                <div class="servicesSideA">
+
+                                        <div id="webdesign" class="service">
+                                            <center><img src="enter url" alt="webdesign icon" class="webdesignIcon"></center>
+                                            <center><h3 class="h3Headings">Web Design</h3>
+                                            <p class="briefDetails">Building Websites customized to the target audience and client Company</p>
+                                        </div>
+
+                                        <div id="graphicdesign" class="service">
+                                            <center><img src="enter url" alt="graphicdesign icon" class="graphicDesignIcon"></center>
+                                            <center><h3 class="h3Headings">Graphic Design</h3>
+                                            <p class="briefDetails">adding a touch of intricate art to your work to make your clients feel at home</p>
+                                        </div>
+                                        
+                                        <div id="lightingTech" class="service">
+                                            <center><img src="enter url" alt="lightingTech icon" class="lightingTechIcon"></center>
+                                            <center><h3 class="h3Headings">Web Design</h3>
+                                            <p class="briefDetails">Automating LED and LCD lights to give the most mind boggling experiences, leaving your clients in awe</p>
+                                        </div>
+                                </div>
+                                        <div class="servicesSideB">
+                                        <div id="SEOmarketing" class="service">
+                                            <center><img src="enter url" alt="SEOmarketing icon" class="SEOmarketingIcon"></center>
+                                            <center><h3 class="h3Headings">SEO Marketing</h3>
+                                            <p class="briefDetails">Marketing your businesses to improve your website</p>
+                                        </div>
+
+                                        <div id="digitalMarketing" class="service">
+                                            <center><img src="enter url" alt="digitalMarketing icon" class="digitalMarketingIcon"></center>
+                                            <center><h3 class="h3Headings">Digital Marketing</h3>
+                                            <p class="briefDetails">promoting your brands to reach all your future clients</p>
+                                        </div>
+
+                                        <div id="emailmarketing" class="service">
+                                            <center><img src="enter url" alt="emailmarketing icon" class="emailmarketingIcon"></center>
+                                            <center><h3 class="h3Headings">Email Marketing</h3>
+                                            <p class="briefDetails">Building Websites customized to the target audience and client Company</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                    </div>
+                    
+                    
+                    
+                    <div id="myProjects" class="corausel">
+                        <p>this is where my projects should be</p>
+                    </div>
+            
+
+        </div>
+         
+        
+        
+        
+            
+        </div>
+
+        
+        
+        <div class="contact-me">
+            <form action="#" method="post">
+                <h3>receive Emails from Mark </h3>
+                <label class="contact-me-texts">enter your first name</label><br/>
+                <input type="text" name="first name" placeholder="firstname" required/><br/>
+
+                <label class="contact-me-texts">enter your last name</label><br/>
+                <input type="text" name="last name" placeholder="lastname" required/><br/>
+
+                <center><label class="contact-me-texts">gender</label></center>
+                <label style="float: left;" class="contact-me-texts">male</label><br/>
+                <input type="radio" name="male" style="float: left;">
+
+                <label style="float: right;" class="contact-me-texts">female</label>
+
+                
+
+
+            </form>
+            <button onclick="operateCorausel()"> hide this </button>
+        </div>
+    
+        <script src="./public/portfolio.js"></script>
 
     </body>
 </html>
