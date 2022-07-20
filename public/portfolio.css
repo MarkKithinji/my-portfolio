@@ -1,0 +1,71 @@
+#myProjects{
+    background-color: rgba(240, 255, 255, 0.205);
+    display: flex;
+    flex-direction: column;
+    
+    height: 4000px;
+}
+.parent-containers{
+    position:relative;
+    top:5%;
+    margin: 0 auto;
+    width: 85%;
+    height:750px;
+    border-radius: 9px;
+    box-shadow: 9px 8px 10px #070707;
+    background-color: #07070796;
+    display: block;    
+    
+}
+.indented-texts{
+    display:block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.projects-headings{
+    font-family: helvetica;
+    color: rgba(240, 255, 255, 0.5);
+    position: absolute;
+    
+}
+.projects-text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: aliceblue;
+}
+.project-block{
+    position:absolute;
+    background-color: #070707;
+    width:100%;
+    height:80%;
+    transition:95ms;
+    
+}
+.image-button{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.fade{
+    position:relative;
+    background-color: #070707;
+    height:100.6%;
+    width: 102%;
+    bottom: 0.67%;
+    right:0.7%;
+    z-index: 3;
+    opacity: 0; 
+    transition: 1s;   
+    color: aliceblue;
+
+}
+.fade:hover{
+    opacity: 0.6;
+}
+.project-block-images{
+    position: absolute;
+    bottom: 0.5%;
+    right: 0.1%;
+    width: 100%;
+    height: 100%;
+}

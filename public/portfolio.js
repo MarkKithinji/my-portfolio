@@ -81,3 +81,20 @@ function aboutMeDissappear() {
     }   
     
 }
+
+/*creating the project(raspberry) button*/
+var projectTxt = document.getElementById("myProjects");
+
+function projectsAppear() {
+    if (projectTxt.style.display === "none") {
+        projectTxt.style.display = "block";
+
+    }
+    else{
+        projectTxt.style.display = "none";
+    }
+}
+
+var projectsButton = document.getElementById("raspberry-overlay-button");
+    projectsButton.addEventListener("click", projectsAppear);
+    projectsButton.addEventListener("click", selfDissapear)

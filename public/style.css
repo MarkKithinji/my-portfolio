@@ -96,7 +96,7 @@ li, a{
     margin-top: 20px;
     outline: solid 2px rgba(197, 191, 191, 0.589);
     text-align: center;
-    color: rgba(0, 0, 0, 0.589);
+    color: white;
     position: absolute;
     right: 5%;
     top: 10px;
@@ -338,6 +338,7 @@ li, a{
     top: 20px;
     left:10px;
     height: 700px;
+    width: 50%;
     
 }
 .servicesSideB{
@@ -347,7 +348,7 @@ li, a{
     width: 50%;
     height: 700px;
     
-    margin: 0 auto;
+    
     
 }
 .service{
@@ -413,7 +414,27 @@ li, a{
     left: 15%;   
     
 }
-
+.Icon{
+   position: absolute; 
+    height: 45%;
+    top: 1rem;
+    width: auto;
+    border-radius: 40%;
+    right: 2rem;
+    
+}
+.iconTitle{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    color: #808080;
+    font-family: helvetica;
+    
+}
+.iconText{
+    position: absolute;
+    bottom: 2px;
+}
 
 
 #contacts{

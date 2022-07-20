@@ -13,6 +13,7 @@
     
     <link rel="stylesheet" href="./public/style.css">
     <link rel="icon" href="./public/images/techicon.png">
+    <link rel="stylesheet" href="./public/portfolio.css">
 </head>
     
 
@@ -35,7 +36,7 @@
                         
                         
 
-                        <h5 id="logotext">TECHBLOG.ORG</h5>
+                        
                         
                     <h1 style="font-family:elephant; float:left;">MarkKithinji,s portfolio</h1><br/>
                     <h3 style="font-family:'Times New Roman', Times, serif; float: left;">STEM programm LEAD STUDENT</h3><br/>
@@ -90,9 +91,9 @@
 
                             <div id="raspberry" class="corausel__button">
                                 <h4>projects</h4>
-                                <img  src="./public/images/arduinoproject.jpg" class="imagebuttons" id="raspberry-underlay">
+                                <a href="#myProjects" target="_self"><img  src="./public/images/arduinoproject.jpg" class="imagebuttons" id="raspberry-underlay"></a>
 
-                                <a href="#" target="_self"><div class="raspberry-overlay"><p>view my projects</p></div></a>
+                                <button class="raspberry-overlay" id="raspberry-overlay-button" onclick="projectsAppear()"><p>view my projects</p></button>
                             </div>
                         
                             <div id="contacts" class="corausel__button">
@@ -107,11 +108,13 @@
                     
                     <div id="contactsText" class="corausel">
                         <p>this is where my contacts should go</p>
+                        <p>buttons here will include a ripple effect</p>
                     </div>
                     
                     
                     
                     <div id="aboutMeText" class="corausel">
+
                         <button onclick="operateCorausel(); aboutMeDissappear();"> go back (under maintenance :( sorry)) </button>
                         <center><h1 class="h1Headings">ABOUT MARK KITHINJI</h1></center>
                             <p class="paragraphs">
@@ -144,40 +147,40 @@
                                 <div class="servicesSideA">
 
                                         <div id="webdesign" class="service">
-                                            <center><img src="enter url" alt="webdesign icon" class="webdesignIcon"></center>
-                                            <center><h3 class="h3Headings">Web Design</h3>
-                                            <p class="briefDetails">Building Websites customized to the target audience and client Company</p>
+                                            <center><img src="./public/animations/icons8-internet.gif" alt="webdesign icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">Web Design</h3></center>
+                                            <p class="briefDetails iconText">Building Websites customized to the target audience and client Company</p>
                                         </div>
 
                                         <div id="graphicdesign" class="service">
-                                            <center><img src="enter url" alt="graphicdesign icon" class="graphicDesignIcon"></center>
-                                            <center><h3 class="h3Headings">Graphic Design</h3>
-                                            <p class="briefDetails">adding a touch of intricate art to your work to make your clients feel at home</p>
+                                            <center><img src="./public/animations/icons8-pen.gif" alt="graphicdesign icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">Graphic Design</h3></center>
+                                            <p class="briefDetails iconText">adding a touch of intricate art to your work to make your clients feel at home</p>
                                         </div>
                                         
                                         <div id="lightingTech" class="service">
-                                            <center><img src="enter url" alt="lightingTech icon" class="lightingTechIcon"></center>
-                                            <center><h3 class="h3Headings">Web Design</h3>
-                                            <p class="briefDetails">Automating LED and LCD lights to give the most mind boggling experiences, leaving your clients in awe</p>
+                                            <center><img src="./public/animations/icons8-light.gif" alt="lightingTech icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">Lighting Tech</h3></center>
+                                            <p class="briefDetails iconText">Automating LED and LCD lights to give the most mind boggling experiences, leaving your clients in awe</p>
                                         </div>
                                 </div>
                                         <div class="servicesSideB">
                                         <div id="SEOmarketing" class="service">
-                                            <center><img src="enter url" alt="SEOmarketing icon" class="SEOmarketingIcon"></center>
-                                            <center><h3 class="h3Headings">SEO Marketing</h3>
-                                            <p class="briefDetails">Marketing your businesses to improve your website</p>
+                                            <center><img src="./public/animations/icons8-money.gif" alt="SEOmarketing icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">SEO Marketing</h3>
+                                            <p class="briefDetails iconText">Marketing your businesses to improve your website</p>
                                         </div>
 
                                         <div id="digitalMarketing" class="service">
-                                            <center><img src="enter url" alt="digitalMarketing icon" class="digitalMarketingIcon"></center>
-                                            <center><h3 class="h3Headings">Digital Marketing</h3>
-                                            <p class="briefDetails">promoting your brands to reach all your future clients</p>
+                                            <center><img src="./public/animations/icons8-computer-chat.gif" alt="digitalMarketing icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">Digital Marketing</h3>
+                                            <p class="briefDetails iconText">promoting your brands to reach all your future clients</p>
                                         </div>
 
                                         <div id="emailmarketing" class="service">
-                                            <center><img src="enter url" alt="emailmarketing icon" class="emailmarketingIcon"></center>
-                                            <center><h3 class="h3Headings">Email Marketing</h3>
-                                            <p class="briefDetails">Building Websites customized to the target audience and client Company</p>
+                                            <center><img src="./public/animations/icons8-gmail-logo.gif" alt="emailmarketing icon" class="Icon"></center>
+                                            <center><h3 class="h3Headings iconTitle">Email Marketing</h3>
+                                            <p class="briefDetails iconText">Building Websites customized to the target audience and client Company</p>
                                         </div>
                                 </div>
                             </div>
@@ -186,8 +189,62 @@
                     
                     
                     
-                    <div id="myProjects" class="corausel">
-                        <p>this is where my projects should be</p>
+                    <div id="myProjects" class="corausel" >
+                        <center><h1 class="h1Headings">MARK VICTOR'S PROJECTS</h1></center>
+                        <p class="projects-text">First published:<br/>20<sup>th</sup> July 2022<br/><br/>Author:<br/>Mark Victor Kithinji</p>
+                        <div class="inspire-in-stem-parent parent-containers">
+                            
+                            <div class="indented-texts">
+                                <h3 class="projects-headings">THE INSPIRE IN STEM PROGRAMME</h3>
+                                <p class="projects-text"> : Production in progress</p><br>
+                                <p class="projects-text">I first developed interest in programming
+                                    during a boot camp intended to nuture young developers 
+                                    <a href="#" class="projects-texts-links">(In Stem Program)</a>
+                                    which was organised by the <a href="#" class="projects-texts-links">
+                                    Jomo Kenyatta University of Agriculture and Technology</a>.
+                                </p>
+                            </div>
+                            <div class="project-block" id="inspire-in-stem"<div class="indented-texts">
+                                <button class="image-button">
+                                    <div class="fade">Find out more about the Inspire In Stem Programme</div>
+                                    <img src="./public/images/groupphoto1.jpeg" alt="JKUAT Inspire In Stem group photo, CBD cohort" class="project-block-images">
+                                </button>
+                             </div>
+                        </div>
+                        <div class="dictionary-of-places-parent parent-containers">
+                            <div class="indented-texts">
+                                <h3 class="projects-headings">THE DICTIONARY OF PLACES</h3>
+                                <p class="projects-text"> : Production in progress</p><br>
+                                <p class="projects-text">This is a mega challenge i gave myself to create 
+                                    a website that gets images of the searched location. I hope to also include fun facts bout the location 
+                                    once I have gained enough experience in web.
+                                </p>
+                            </div>
+                            <div class="project-block" id="dictionary-of-places">
+                                <button class="image-button">
+                                    <div class="fade">Explore the dictionary of places</div>
+                                    <img src="./public/images/dictionary of places.jpg" alt="illustration of a random location on the world map" class="project-block-images">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="eatz-user-interface-parent parent-containers">
+                            <div class="indented-texts">
+                                <h3 class="projects-headings">EATZ APPLICATION HOME PAGE</h3>
+                                <p class="projects-text"> : Production in progress</p><br>
+                                <p class="projects-text">This the home page of the eatz application created by my big bro.
+                                    He created this app to be an online food odering application.
+                                    he however doesn't have a website, so i felt it will be 
+                                    fancy to create it for him.
+
+                                </p>
+                            </div>
+                            <div class="project-block" id="eatz-userface"></div>
+                            <button class="image-button">
+                                <div class="fade">Explore the EATZ official website</div>
+                                <img src="./public/images/food.jpg" alt="illustration of a large tasty meal" class="project-block-images">
+                            </button>
+                        </div>
+
                     </div>
             
 
