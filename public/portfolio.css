@@ -1,6 +1,6 @@
 #myProjects{
     background-color: rgba(240, 255, 255, 0.205);
-    display: flex;
+    display: none;
     flex-direction: column;
     
     height: 4000px;

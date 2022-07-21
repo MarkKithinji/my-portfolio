@@ -45,6 +45,9 @@ function selfDissapear() {
 
 
 function aboutMeAppear() {
+   // Boolean (appear) = false;
+    //appear?abtme.style.display="block":abtme.style.display="none";
+
    var abtme = document.getElementById("aboutMeText");
     if (abtme.style.display === "none") {
         abtme.style.display = "block";
