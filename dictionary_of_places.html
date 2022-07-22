@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="background_i"></div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./public/DOPfiles/DOP.css">
+    </head>
+    <body>
+            <div class="options"></div>
+                <button id="stopPlayback">:</button>
+            </div>
+            <div class="explorePage">
+                <div class="Explore" id="exploreContainer">
+                    <button class="exploreBtn" id="exploreBtnID" onclick="exploreButtonMove()">EXPLORE THE WORLD</button>
+                </div>
+            
+            
+                <div class="background_video" id="background">
+                    <div class="vignette"></div>
+                    <video autoplay muted loop id = "myVideo">
+                        <source src = "./public/videos/backgroundVideo.mp4" type = "video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+
+
+        <script src="./public/DOPfiles/DOP.js"></script>
+    </body>
 </html>
