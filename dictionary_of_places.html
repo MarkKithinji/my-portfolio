@@ -13,8 +13,22 @@
             </div>
             <div class="explorePage">
                 <div class="Explore" id="exploreContainer">
-                    <button class="exploreBtn" id="exploreBtnID" onclick="exploreButtonMove()">EXPLORE THE WORLD</button>
+                    <div class="exploreBtn" id="exploreBtnID" onclick="exploreButtonMove()">
+                        <form method="GET">
+                            <input class="searchID" autocomplete="on" type="text" name="search" placeholder="EXPLORE THE WORLD" required/>
+                            <button class="searchButton">
+                                search
+                            </button>
+                        </form>
+                    </div>
+                    
                 </div>
+                <div class="clientResponse" id="client_Response"></div>
+
+                <?php
+                    $place = $_GET['search'];
+                    echo "Our search engines are searching for ".$place.", be patient"
+                ?>
             
             
                 <div class="background_video" id="background">
